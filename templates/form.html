@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+<FORM action="{{url_for('form')}}" method="post">
+
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+
+    <input type="text" name="username"> </br>
+
+    <input type="password" name="password"> </br>
+
+    <input type="submit" value="Submit">
+
+</FORM>
+
+</body>
+</html>
