@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
-<p><a href = "{{ url_for('form') }}">
-         Form</a></p>
+<h2>Converter Bot</h2>
+
+<table>
+
+    <tr>
+        <td style="width:30%;">
+            <div class="card" style="background-color:red;" onclick="window.location.href='{{ url_for( 'photo_resizer') }}';">
+                <h2 onclick="{{ url_for('add_record')}}"><b>Photo Resizer</b></h2>
+                <p>Resize you photo to any size</p>
+            </div>
+        </td>
+        <td style="width:30%">
+            <div class="card">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+        </td>
+
+
+    </tr>
+
+</table>
+
+
 </body>
 </html>
